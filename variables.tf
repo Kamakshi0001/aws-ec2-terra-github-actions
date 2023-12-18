@@ -16,7 +16,7 @@ variable "availability_zone" {
 
 variable "key_name" {
   description = "EC2 instance key pair name"
-  default     = "jpass"  
+  default     = "my-ec2-keypair-pem"  
 }
 
 variable "security_groups" {
@@ -27,13 +27,13 @@ variable "security_groups" {
 
 variable "subnet_id" {
   description = "The subnet ID for the EC2 instance"
-  default     = "subnet-0e1e12286b0be59b8" 
+  default     = "subnet-0b748cbd89f0258b0" 
 }
 
 variable "tags" {
   type    = map(string)
   default = {
-    Name        = "TF-Instance-prash"
-    Environment = "DevPrash"
+    Name        = "divyaponnada"
+    Environment = "divya"
   }
 }
